@@ -6,11 +6,11 @@ Background color #6D6D6D to the HTML tags body and h2
 
  */
 $text-color: #3D3D3D;
-$bg-color: #6D6D6D;
+$background: #6D6D6D;
 
 body {
   color: $text-color;
-  background-color: $bg-color;
+  background-color: $background;
 }
 
 p {
@@ -18,5 +18,5 @@ p {
 }
 
 h2 {
-  background-color: $bg-color;
+  background-color: $background;
 }
