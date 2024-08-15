@@ -1,0 +1,13 @@
+/*
+A test file that assigns the text color
+# to the HTML tags body and paragragh
+ */
+$text-color: #3D3D3D;
+
+body {
+  color: $text-color;
+}
+
+p {
+  color: $text-color;
+}
