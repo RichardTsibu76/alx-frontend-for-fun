@@ -1,0 +1,13 @@
+/* Nested hover
+change button color on hover
+
+This sign & shows the ampersand
+ */
+
+button {
+    color: #FF0000;
+
+    &:hover {
+        color: #00FF00;
+    }
+}
