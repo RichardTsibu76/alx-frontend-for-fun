@@ -1,7 +1,26 @@
-/* Write a Sass file that sorts the variable 
-$list_to_sort and prints the sorted list in the debug output.
- */
+$list_to_sort: 10, 2, 8, 4, 6;
 
-@import '103-sort_list';
+@function sort-list($list) {
+  $n: length($list);
 
-@debug $list_to_sort;
+  @for $i from 1 through $n - 1 {
+    @for $j from 1 through $n - $i {
+      $current-item: nth($list, $j);
+      $next-item: nth($list, $j + 1);
+
+      @if $current-item > $next-item {
+        // Swap the items
+        $list: set-nth($list, $j, $next-item);
+        $list: set-nth($list, $j + 1, $current-item);
+      }
+    }
+  }
+
+  @return $list;
+}
+
+$sorted_list: sort-list($list_to_sort);
+
+// Debug output
+@debug $sorted_list;
+
