@@ -1,12 +1,9 @@
-// Define styles for all button tags
+/* Sass file */
+$color-0: #FF0000;
+$color-1: #00FF00;
 button {
-  // Set the default text color to red
-  color: #FF0000;
-
-  // Nested declaration for hover state
+  color: $color-0;
   &:hover {
-    // Change the text color to green on hover
-    color: #00FF00;
+    color: $color-1;
   }
 }
-
