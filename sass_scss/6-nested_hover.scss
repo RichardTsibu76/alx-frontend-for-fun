@@ -1,10 +1,12 @@
-/* Nested hover
-change button color on hover */
-
+// Define styles for all button tags
 button {
-    color: #FF0000;
+  // Set the default text color to red
+  color: #FF0000;
 
-    &:hover {
-        color: #00FF00;
-    }
+  // Nested declaration for hover state
+  &:hover {
+    // Change the text color to green on hover
+    color: #00FF00;
+  }
 }
+
