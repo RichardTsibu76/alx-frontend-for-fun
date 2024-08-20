@@ -1,11 +1,10 @@
-/* My style */
-
-/* Apply styles to button tags and hover effect */
+/* variable */
+$red_color: #ff0000;
+$hover_color: #00ff00;
+/*nested hover*/
 button {
-    color: #FF0000;
-  
-    &:hover {
-      color: #00FF00;
-    }
+  color: $red_color;
+  &:hover {
+    color: $hover_color;
   }
-  
+}
